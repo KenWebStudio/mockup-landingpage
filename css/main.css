@@ -1,0 +1,427 @@
+body {
+  overflow-x: hidden; }
+
+.normal {
+  height: 121px;
+  padding: 18px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  @media (max-width: 500px) {
+    .normal {
+      height: 90px;
+      padding: 10px; } }
+  .normal img {
+    width: 94px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    @media (max-width: 500px) {
+      .normal img {
+        width: 75px; } }
+
+.shrink {
+  padding: 10px;
+  height: 93px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  @media (max-width: 500px) {
+    .shrink {
+      height: 78px; } }
+  @media (max-width: 500px) {
+    .shrink .navbar-toggle {
+      margin-top: 10px; } }
+  .shrink img {
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    @media (max-width: 500px) {
+      .shrink img {
+        width: 60px; } }
+  @media (min-width: 768px) {
+    .shrink #mainNav .navbar-nav {
+      margin-top: 12px; } }
+  @media (max-width: 500px) {
+    .shrink .navbarRightWrap a {
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      margin-top: 16px; } }
+
+.wrapper {
+  font-family: Verdana, sans-serif;
+  color: #131313;
+  float: left;
+  width: 100%; }
+  .wrapper .marginTopFixedNav {
+    margin-top: 121px; }
+    @media (max-width: 500px) {
+      .wrapper .marginTopFixedNav {
+        margin-top: 90px; } }
+
+/* Top Hero Unit
+################################## */
+.jumbotron {
+  color: #FFF;
+  max-height: 680px;
+  background: -webkit-linear-gradient(#21216d, #290a59) left repeat;
+  background: linear-gradient(#21216d, #290a59) left repeat; }
+  @media (max-width: 767px) {
+    .jumbotron {
+      max-height: none;
+      margin-bottom: 1rem; } }
+  .jumbotron .headline-text h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    font-style: italic; }
+    .jumbotron .headline-text h1 small {
+      color: inherit;
+      font-family: "Merriweather", serif;
+      font-style: normal; }
+  .jumbotron .headline-text p {
+    font: 2rem "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 4rem; }
+  .jumbotron .arrow-red img {
+    position: absolute;
+    right: -1.5rem;
+    z-index: 1; }
+  .jumbotron .cta-form {
+    background-color: #534f58;
+    border-radius: 3px; }
+    .jumbotron .cta-form .form-heading {
+      color: #ffd68b;
+      border-radius: 3px;
+      padding-bottom: 2.2rem;
+      background: -webkit-linear-gradient(#c83c3c, #a71a1a) left repeat;
+      background: linear-gradient(#c83c3c, #a71a1a) left repeat; }
+      .jumbotron .cta-form .form-heading h3 {
+        font-size: 1.6rem;
+        font-weight: 700; }
+    .jumbotron .cta-form .form-content p {
+      padding: 2rem 0 5px;
+      font-size: 1.4rem; }
+    .jumbotron .cta-form .form-content .form-group {
+      margin-bottom: 8px;
+      padding: 0 5px; }
+    .jumbotron .cta-form .form-content .cta-submit {
+      margin-bottom: 2rem;
+      padding: 0 5px; }
+      .jumbotron .cta-form .form-content .cta-submit .cta-btn {
+        color: #280f5d;
+        font-weight: 700;
+        font-size: 2rem;
+        width: 100%;
+        background: -webkit-linear-gradient(#ff9b00, #ff6e05) left repeat;
+        background: linear-gradient(#ff9b00, #ff6e05) left repeat; }
+        .jumbotron .cta-form .form-content .cta-submit .cta-btn span {
+          color: #3e31ad; }
+        .jumbotron .cta-form .form-content .cta-submit .cta-btn:hover, .jumbotron .cta-form .form-content .cta-submit .cta-btn:focus {
+          color: #3e31ad;
+          background: -webkit-linear-gradient(#ff9632, #ffa037) left repeat;
+          background: linear-gradient(#ff9632, #ffa037) left repeat; }
+        @media (max-width: 500px) {
+          .jumbotron .cta-form .form-content .cta-submit .cta-btn {
+            font-size: 1.6rem; } }
+  .jumbotron .painter-img img {
+    position: absolute;
+    top: 2.4rem;
+    right: -8rem; }
+
+/* Information Section
+################################## */
+.info-section {
+  padding: 7rem 0 5rem; }
+  @media (max-width: 767px) {
+    .info-section {
+      padding: 0 1rem 3rem; } }
+  .info-section h2 {
+    color: #280f5d;
+    font: 2.8rem "Merriweather", serif; }
+  .info-section .info-panel {
+    margin-top: 5rem;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px #86808d; }
+    @media (max-width: 767px) {
+      .info-section .info-panel {
+        margin-top: 1rem; } }
+    .info-section .info-panel .info-head {
+      font-family: "Merriweather", serif;
+      color: #FFF;
+      border-radius: 3px;
+      padding: 5px;
+      background: -webkit-linear-gradient(#21216d, #290a59) left repeat;
+      background: linear-gradient(#21216d, #290a59) left repeat; }
+      .info-section .info-panel .info-head h3 {
+        font-size: 2.2rem;
+        text-align: center; }
+    .info-section .info-panel .info-content {
+      padding: 3rem; }
+    .info-section .info-panel .info-img {
+      padding: 3rem 3rem 0; }
+
+/* Testimonials Section
+################################## */
+.testimonials {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px #a7a3ac; }
+  .testimonials blockquote {
+    font-style: italic;
+    font-size: inherit; }
+    .testimonials blockquote:before {
+      color: #939393;
+      font-family: FontAwesome;
+      content: "\f10d";
+      display: inline-block;
+      margin-right: 1rem; }
+    .testimonials blockquote footer {
+      color: inherit;
+      font-weight: 700;
+      font-size: inherit;
+      margin-top: 1.4rem; }
+  .testimonials a.yellow-btn {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.6rem;
+    width: 92%;
+    padding: 2.4rem 0;
+    background: -webkit-linear-gradient(#ff9b00, #ff6e05) left repeat;
+    background: linear-gradient(#ff9b00, #ff6e05) left repeat; }
+    .testimonials a.yellow-btn:hover, .testimonials a.yellow-btn:focus {
+      background: -webkit-linear-gradient(#ff9632, #ffa037) left repeat;
+      background: linear-gradient(#ff9632, #ffa037) left repeat; }
+    @media (max-width: 767px) {
+      .testimonials a.yellow-btn {
+        width: 100%; } }
+  .testimonials .testimonial-button {
+    padding-top: 4rem; }
+  .testimonials .arrow-blue img {
+    position: absolute;
+    bottom: -6rem;
+    right: 8rem; }
+    @media (max-width: 1199px) {
+      .testimonials .arrow-blue img {
+        right: 2rem; } }
+
+/* About The Company Section
+################################## */
+.about-us {
+  padding: 6rem 0 5rem; }
+  .about-us img.ribbon {
+    position: absolute;
+    top: 0;
+    left: 15px; }
+  .about-us .about-panel {
+    color: #FFF;
+    padding: 2rem 2rem 3.3rem;
+    min-height: 478px;
+    background: -webkit-linear-gradient(#21216d, #290a59) left repeat;
+    background: linear-gradient(#21216d, #290a59) left repeat; }
+  .about-us .about-content {
+    padding-top: 1rem; }
+    .about-us .about-content h3 {
+      font-family: "Merriweather", serif; }
+    .about-us .about-content small {
+      font-style: italic; }
+
+/* Painter Project Audit Section
+################################## */
+.project-audit, .project-audit-2 {
+  padding: 4rem 0 3rem;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px #a7a3ac; }
+  @media (max-width: 767px) {
+    .project-audit, .project-audit-2 {
+      padding: 0 1rem 3rem; } }
+  .project-audit .audit-steps, .project-audit-2 .audit-steps {
+    padding-top: 4rem;
+    padding-bottom: 2.2rem;
+    border-bottom: 3px double #e6e6e6; }
+  .project-audit h2, .project-audit-2 h2 {
+    color: #280f5d;
+    font: 2.8rem "Merriweather", serif; }
+  .project-audit .bullet, .project-audit-2 .bullet {
+    background-image: url("../img/bullet-list-red.png");
+    background-image: url("../img/bullet-list-red.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 1rem; }
+    .project-audit .bullet p, .project-audit-2 .bullet p {
+      text-align: center;
+      margin: 0;
+      color: #FFF;
+      font: 2rem "Merriweather", serif; }
+    @media (max-width: 767px) {
+      .project-audit .bullet, .project-audit-2 .bullet {
+        background-image: url("../img/bullet-list-red-sm.png");
+        background-image: url("../img/bullet-list-red-sm.png");
+        padding-left: 0; }
+        .project-audit .bullet p, .project-audit-2 .bullet p {
+          font-size: 2.4rem;
+          text-align: left;
+          margin-left: 2rem; } }
+  .project-audit h3, .project-audit-2 h3 {
+    color: #ba2e2d;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 3rem; }
+
+.project-audit-2 {
+  background: none transparent;
+  box-shadow: none; }
+
+/* PDF Download Section
+################################## */
+.pdf-download {
+  padding: 4rem 0 3rem; }
+  .pdf-download h2 {
+    color: #3b1689;
+    font-style: italic;
+    font-weight: 700; }
+    .pdf-download h2 small {
+      color: #ba2e2d;
+      font-family: "Merriweather", serif;
+      font-style: italic;
+      font-weight: 700; }
+      .pdf-download h2 small strong {
+        font-weight: 900; }
+  @media (max-width: 991px) {
+    .pdf-download .pdf-download-head img {
+      position: absolute;
+      top: 6rem;
+      right: 0; } }
+  @media (max-width: 992px) and (min-width: 768px) {
+    .pdf-download .pdf-download-head img {
+      position: absolute;
+      right: 0;
+      top: 2.6rem; } }
+  .pdf-download .pdf-download-content {
+    background-color: #ba2e2d;
+    padding-top: 3rem;
+    padding-bottom: 2.2rem; }
+  .pdf-download img.arrow-green {
+    position: absolute;
+    top: 16.5rem;
+    z-index: 10; }
+    @media (max-width: 992px) and (min-width: 768px) {
+      .pdf-download img.arrow-green {
+        top: 14.5rem; } }
+  .pdf-download .cta-form {
+    background-color: #280f5d;
+    padding-top: 3rem; }
+    .pdf-download .cta-form form .form-group {
+      margin-bottom: 8px;
+      padding: 0 5px; }
+    .pdf-download .cta-form form .cta-submit {
+      margin-bottom: 2rem;
+      padding: 0 5px; }
+      .pdf-download .cta-form form .cta-submit .cta-btn {
+        color: #FFF;
+        font-weight: 700;
+        font-size: 2rem;
+        width: 100%;
+        background: -webkit-linear-gradient(#ff9b00, #ff6e05) left repeat;
+        background: linear-gradient(#ff9b00, #ff6e05) left repeat; }
+        .pdf-download .cta-form form .cta-submit .cta-btn:hover, .pdf-download .cta-form form .cta-submit .cta-btn:focus {
+          background: -webkit-linear-gradient(#ff9632, #ffa037) left repeat;
+          background: linear-gradient(#ff9632, #ffa037) left repeat; }
+        @media (max-width: 992px) and (min-width: 768px) {
+          .pdf-download .cta-form form .cta-submit .cta-btn {
+            font-size: 1.4rem; } }
+        @media (max-width: 500px) {
+          .pdf-download .cta-form form .cta-submit .cta-btn {
+            font-size: 1.4rem; } }
+  .pdf-download .right-col {
+    color: #FFF; }
+    .pdf-download .right-col h3 {
+      font-family: "Merriweather", serif;
+      font-style: italic;
+      font-weight: 700; }
+      .pdf-download .right-col h3 small {
+        color: #FFF;
+        font-size: 88%; }
+    .pdf-download .right-col p {
+      margin: 1.5rem 0; }
+    .pdf-download .right-col ul {
+      list-style-image: url(../img/icon-check.png); }
+      .pdf-download .right-col ul li {
+        margin-bottom: 2rem; }
+
+/* Specific Services Section
+################################## */
+.services h2 {
+  color: #280f5d;
+  font: 2.8rem "Merriweather", serif; }
+.services .services-list {
+  padding: 4rem 0 3rem;
+  background-color: #f2f2f2; }
+  .services .services-list ul {
+    list-style-type: none;
+    font-size: 1.6rem; }
+    .services .services-list ul li {
+      line-height: 3.6rem; }
+    @media (max-width: 767px) {
+      .services .services-list ul {
+        text-align: center; } }
+
+/* Footer CTA Section
+################################## */
+.footer-cta {
+  padding: 4rem 0 3rem;
+  color: #FFF; }
+  .footer-cta h2 {
+    color: #280f5d;
+    font: 2.8rem "Merriweather", serif; }
+  .footer-cta .cta-form {
+    background: -webkit-linear-gradient(#21216d, #290a59) left repeat;
+    background: linear-gradient(#21216d, #290a59) left repeat;
+    border-radius: 3px; }
+    .footer-cta .cta-form .form-heading {
+      color: #ffd68b;
+      border-radius: 3px;
+      padding-bottom: 2.2rem;
+      background: -webkit-linear-gradient(#c83c3c, #a71a1a) left repeat;
+      background: linear-gradient(#c83c3c, #a71a1a) left repeat; }
+      .footer-cta .cta-form .form-heading h3 {
+        font-size: 1.6rem;
+        font-weight: 700; }
+    .footer-cta .cta-form .form-content p {
+      padding: 2rem 0 5px;
+      font-size: 1.4rem; }
+    .footer-cta .cta-form .form-content .form-group {
+      margin-bottom: 8px;
+      padding: 0 5px; }
+    .footer-cta .cta-form .form-content .cta-submit {
+      margin-bottom: 2rem;
+      padding: 0 5px; }
+      .footer-cta .cta-form .form-content .cta-submit .cta-btn {
+        color: #280f5d;
+        font-weight: 700;
+        font-size: 2rem;
+        width: 100%;
+        background: -webkit-linear-gradient(#ff9b00, #ff6e05) left repeat;
+        background: linear-gradient(#ff9b00, #ff6e05) left repeat; }
+        .footer-cta .cta-form .form-content .cta-submit .cta-btn span {
+          color: #3e31ad; }
+        .footer-cta .cta-form .form-content .cta-submit .cta-btn:hover, .footer-cta .cta-form .form-content .cta-submit .cta-btn:focus {
+          color: #3e31ad;
+          background: -webkit-linear-gradient(#ff9632, #ffa037) left repeat;
+          background: linear-gradient(#ff9632, #ffa037) left repeat; }
+        @media (max-width: 500px) {
+          .footer-cta .cta-form .form-content .cta-submit .cta-btn {
+            font-size: 1.6rem; } }
+
+.footer-awards {
+  padding: 9rem 0 3rem; }

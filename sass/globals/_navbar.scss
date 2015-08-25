@@ -1,0 +1,51 @@
+//Shrinking Nav Styles
+.normal {
+    height: 121px;
+    padding: 18px;
+    @include transition(all);
+    @include breakpoint(xs) {
+        height: 90px;
+        padding: 10px;
+    }
+    img {
+        width: 94px;
+        @include transition(all);
+        @include breakpoint(xs) {
+            width: 75px;
+        }
+    }
+}
+.shrink {
+    padding: 10px;
+    height: 93px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.35);
+    @include transition(all);
+    @include breakpoint(xs) {
+        height: 78px;
+    }
+    .navbar-toggle {
+        @include breakpoint(xs) {
+            margin-top: 10px;
+        }
+    }
+    img {
+        width: 80px;
+        @include transition(all);
+        @include breakpoint(xs) {
+            width: 60px;
+        }
+    }
+    #mainNav .navbar-nav {
+        @include breakpoint(su) {
+            margin-top: 12px;
+        }
+    }
+    .navbarRightWrap {
+        a {
+            @include breakpoint(xs) {
+                @include transition(all);
+                margin-top: 16px;
+            }
+        }
+    }
+}

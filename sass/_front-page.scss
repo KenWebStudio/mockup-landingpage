@@ -1,0 +1,491 @@
+/* Top Hero Unit
+################################## */
+.jumbotron {
+   color: $white;
+   max-height: 680px;
+   @include background(linear-gradient($blueBG) left repeat);
+   
+   @include breakpoint(sd) { max-height: none; margin-bottom: 1rem; }
+   
+   .headline-text {
+      h1 {
+         font-size: 3.6rem;
+         font-weight: $bold;
+         font-style: italic;
+         
+         small {
+            color: inherit;
+            font-family: $fontHead;
+            font-style: normal;
+         }
+      }
+      
+      p {
+         font: 2rem $fontHead;
+         font-weight: $bold;
+         font-style: italic;
+         margin-top: 4rem;
+      }
+   }
+   
+   .arrow-red {
+      img {
+         position: absolute;
+         right: -1.5rem;
+         z-index: 1;
+      }
+   }
+   
+   .cta-form {
+      background-color: $gray;
+      border-radius: 3px;
+      
+      .form-heading {
+         color: $peach;
+         border-radius: 3px;
+         padding-bottom: 2.2rem;
+         @include background(linear-gradient($redBG) left repeat);
+         
+         h3 { font-size: 1.6rem; font-weight: $bold; }
+      }
+      
+      .form-content {
+         p {
+            padding: 2rem 0 5px;
+            font-size: 1.4rem;
+         }
+         
+         .form-group {
+            margin-bottom: 8px;
+            padding: 0 5px;
+         }
+         
+         .cta-submit {
+            margin-bottom: 2rem;
+            padding: 0 5px;
+            
+            .cta-btn {
+               color: $blue;
+               font-weight: $bold;
+               font-size: 2rem;
+               width: 100%;
+               @include background(linear-gradient($orangeBG) left repeat);
+               
+               span { color: $blueLight; }
+               
+               &:hover, &:focus {
+                  color: $blueLight;
+                  @include background(linear-gradient($orangeBG-hover) left repeat);
+               }
+               
+               @include breakpoint(xs) {
+                  font-size: 1.6rem;
+               }
+            }
+         }
+      }
+   }
+   
+   .painter-img {
+      img {
+         position: absolute;
+         top: 2.4rem;
+         right: -8rem;
+      }
+   }
+}
+
+/* Information Section
+################################## */
+.info-section {
+   padding: 7rem 0 5rem;
+   
+   @include breakpoint(sd) { padding: 0 1rem 3rem; }
+   
+   h2 {
+      color: $blue;
+      font: 2.8rem $fontHead; 
+   }
+   
+   .info-panel {
+      margin-top: 5rem;
+      background-color: darken($white, 5%);
+      border-radius: 3px;
+      box-shadow: 0 1px 5px lighten($gray, 20%);
+      
+      @include breakpoint(sd) { margin-top: 1rem; }
+      
+      .info-head {
+         font-family: $fontHead;
+         color: $white;
+         border-radius: 3px;
+         padding: 5px;
+         @include background(linear-gradient($blueBG) left repeat);
+         
+         h3 { 
+            font-size: 2.2rem;
+            text-align: center;
+         }
+      }
+      
+      .info-content {
+         padding: 3rem;
+      }
+      
+      .info-img {
+         padding: 3rem 3rem 0;
+      }
+   }
+}
+
+/* Testimonials Section
+################################## */
+.testimonials {
+   background-color: darken($white, 5%);
+   box-shadow: 0 0 5px lighten($gray, 33%);
+   
+   blockquote {
+      font-style: italic;
+      font-size: inherit;
+      &:before {
+         color: lighten($mainText, 50%);
+         font-family: FontAwesome;
+         content: "\f10d";
+         display: inline-block;
+         margin-right: 1rem;
+      }
+      
+      footer {
+         color: inherit;
+         font-weight: $bold;
+         font-size: inherit;
+         margin-top: 1.4rem;
+      }
+   }
+   
+   a.yellow-btn {
+      color: $white;
+      font-weight: $bold;
+      font-size: 1.6rem;
+      width: 92%;
+      padding: 2.4rem 0;
+      @include background(linear-gradient($orangeBGDark) left repeat);
+      
+      &:hover, &:focus {
+         @include background(linear-gradient($orangeBG-hover) left repeat);
+      }
+      
+      @include breakpoint(sd) { width: 100%; }
+   }
+   
+   .testimonial-button { padding-top: 4rem; }
+   
+   .arrow-blue {
+      img {
+         position: absolute;
+         bottom: -6rem;
+         right: 8rem;
+         @include breakpoint(ld) { right: 2rem; }
+      }
+   }
+}
+
+/* About The Company Section
+################################## */
+.about-us {
+   padding: 6rem 0 5rem;
+   
+   img.ribbon {
+      position: absolute;
+      top: 0;
+      left: 15px;
+   }
+   
+   .about-panel {
+      color: $white;
+      padding: 2rem 2rem 3.3rem;
+      min-height: 478px;
+      @include background(linear-gradient($blueBG) left repeat);
+   }
+   
+   .about-content {
+      padding-top: 1rem;
+      
+      h3 {
+         font-family: $fontHead;
+      }
+      
+      small { font-style: italic; }
+   }
+}
+
+/* Painter Project Audit Section
+################################## */
+.project-audit, .project-audit-2 {
+   padding: 4rem 0 3rem;
+   background-color: darken($white, 5%);
+   box-shadow: 0 0 5px lighten($gray, 33%);
+   
+   @include breakpoint(sd) { padding: 0 1rem 3rem; }
+   
+   .audit-steps {
+      padding-top: 4rem;
+      padding-bottom: 2.2rem;
+      border-bottom: 3px double darken($white, 10%);
+   }
+   
+   h2 {
+      color: $blue;
+      font: 2.8rem $fontHead; 
+   }
+   
+   .bullet {
+      @include background-image(url("../img/bullet-list-red.png"));
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 1rem;
+      
+      p {
+         text-align: center;
+         margin: 0;
+         color: $white;
+         font: 2rem $fontHead;     
+      }
+      
+      @include breakpoint(sd) { 
+         @include background-image(url("../img/bullet-list-red-sm.png"));
+         padding-left: 0; 
+      
+         p {
+            font-size: 2.4rem;
+            text-align: left;
+            margin-left: 2rem;
+         }
+      }
+   }
+   
+   h3 {
+      color: $red;
+      font-family: $fontHead;
+      font-weight: $bold;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+   }
+}
+
+.project-audit-2 {
+   background: none transparent;
+   box-shadow: none;
+}
+
+/* PDF Download Section
+################################## */
+.pdf-download {
+   padding: 4rem 0 3rem;
+   
+   h2 {
+      color: lighten($blue, 10%);
+      font-style: italic;
+      font-weight: $bold;
+      
+      small {
+         color: $red;
+         font-family: $fontHead;
+         font-style: italic;
+         font-weight: $bold;
+         
+         strong { font-weight: $ultraBold; }
+      }
+   }
+   
+   .pdf-download-head {
+      img {
+         @include breakpoint(md) {
+            position: absolute;
+            top: 6rem;
+            right: 0;
+         }
+         
+         @include breakpoint(sm) {
+            position: absolute;
+            right: 0;
+            top: 2.6rem;
+         }
+      }
+   }
+   
+   .pdf-download-content {
+      background-color: $red;
+      padding-top: 3rem;
+      padding-bottom: 2.2rem;
+   }
+   
+   img.arrow-green {
+      position: absolute;
+      top: 16.5rem; 
+      z-index: 10;
+      
+      @include breakpoint(sm) {
+         top: 14.5rem;
+      }
+   }
+   
+   .cta-form {
+      background-color: $blue;
+      padding-top: 3rem;
+      
+      form {
+         
+         .form-group {
+            margin-bottom: 8px;
+            padding: 0 5px;
+         }
+         
+         .cta-submit {
+            margin-bottom: 2rem;
+            padding: 0 5px;
+            
+            .cta-btn {
+               color: $white;
+               font-weight: $bold;
+               font-size: 2rem;
+               width: 100%;
+               @include background(linear-gradient($orangeBG) left repeat);
+               
+               &:hover, &:focus {
+                  @include background(linear-gradient($orangeBG-hover) left repeat);
+               }
+               
+               @include breakpoint(sm) {
+                  font-size: 1.4rem;
+               }
+               @include breakpoint(xs) {
+                  font-size: 1.4rem;
+               }
+            }
+         }
+      }
+   }
+   
+   .right-col {
+      color: $white;
+      
+      h3 {
+         font-family: $fontHead;
+         font-style: italic;
+         font-weight: $bold;
+         
+         small {
+            color: $white;
+            font-size: 88%;
+         }
+      }
+      
+      p {
+         margin: 1.5rem 0;
+      }
+      
+      ul {
+         list-style-image: url(../img/icon-check.png);
+         
+         li {
+            margin-bottom: 2rem;
+         }
+      }
+   }
+}
+
+/* Specific Services Section
+################################## */
+.services {
+   
+   h2 {
+   color: $blue;
+   font: 2.8rem $fontHead; 
+   }
+   
+   .services-list {
+      padding: 4rem 0 3rem;
+      background-color: darken($white, 5%);
+      
+      ul {
+         list-style-type: none;
+         font-size: 1.6rem;
+         
+         li {
+            line-height: 3.6rem;
+         }
+      
+         @include breakpoint(sd) {
+            text-align: center;
+         }
+      }
+   }
+}
+
+/* Footer CTA Section
+################################## */
+.footer-cta {
+   padding: 4rem 0 3rem;
+   color: $white;
+   
+   h2 {
+   color: $blue;
+   font: 2.8rem $fontHead; 
+   }
+   
+   .cta-form {
+      @include background(linear-gradient($blueBG) left repeat);
+      border-radius: 3px;
+      
+      .form-heading {
+         color: $peach;
+         border-radius: 3px;
+         padding-bottom: 2.2rem;
+         @include background(linear-gradient($redBG) left repeat);
+         
+         h3 { font-size: 1.6rem; font-weight: $bold; }
+      }
+      
+      .form-content {
+         p {
+            padding: 2rem 0 5px;
+            font-size: 1.4rem;
+         }
+         
+         .form-group {
+            margin-bottom: 8px;
+            padding: 0 5px;
+         }
+         
+         .cta-submit {
+            margin-bottom: 2rem;
+            padding: 0 5px;
+            
+            .cta-btn {
+               color: $blue;
+               font-weight: $bold;
+               font-size: 2rem;
+               width: 100%;
+               @include background(linear-gradient($orangeBG) left repeat);
+               
+               span { color: $blueLight; }
+               
+               &:hover, &:focus {
+                  color: $blueLight;
+                  @include background(linear-gradient($orangeBG-hover) left repeat);
+               }
+               
+               @include breakpoint(xs) {
+                  font-size: 1.6rem;
+               }
+            }
+         }
+      }
+   }
+}
+
+.footer-awards {
+   padding: 9rem 0 3rem;
+}

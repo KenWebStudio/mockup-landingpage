@@ -1,0 +1,18 @@
+body { overflow-x: hidden; }
+
+@import "navbar";
+@import "footer";
+
+.wrapper {
+   font-family: $fontStack;
+   color: $mainText;
+   float: left;
+   width: 100%;
+   
+   .marginTopFixedNav {
+      margin-top: 121px;
+      @include breakpoint(xs) {
+         margin-top:90px;
+      }
+   }
+}

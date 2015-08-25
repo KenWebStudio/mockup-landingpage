@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link rel="shortcut icon" href="">
+   <title>Breakout Painter</title>
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+   <!-- Google Fonts -->
+   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+   <!-- FontAwesome CSS -->
+   <link rel="stylesheet" href="vendor/font-awesome-4.3.0/css/font-awesome.min.css">
+
+   <!-- Fancybox CSS -->
+   <link rel="stylesheet" href="vendor/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+   <!-- SimplyScroll CSS -->
+   <link rel="stylesheet" href="vendor/simplyscroll/jquery.simplyscroll.css">
+
+   <!-- Slick CSS -->
+   <link rel="stylesheet" href="vendor/slick/slick.min.css">
+   <link rel="stylesheet" href="vendor/slick/slick-theme.min.css">
+
+   <!-- Animate CSS -->
+   <link rel="stylesheet" href="vendor/animate/animate.css">
+
+   <!-- User Style Sheet CSS -->
+   <link rel="stylesheet" href="css/main.css">
+
+   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   <![endif]-->
+</head>
+
+<body>
+   <div class="wrapper">
+      <!-- Jumbotron -->
+      <section class="jumbotron">
+         <div class="container">
+            <div class="row">
+               <!-- Left Content -->
+               <div class="col-md-9">
+                  <!-- Headline Text -->
+                  <div class="headline-text">
+                     <h1>Finally! A Neat, Clean, Thorough, Professional Painting Job or Your Paint Is 100% FREE!<br/>
+                        <small>Never Do Business with a “Typical” Painting Contractor Again!</small>
+                     </h1>
+                     <p>Our Seasoned Crew Leaders and Unique Painting Systems Ensure Your Project Will Be a Success – Guaranteed!</p>
+                  </div> <!-- End Headline Text -->
+                  
+                  <!-- CTA Panel -->
+                  <div class="row">
+                     <div class="col-sm-5">
+                        <!-- Video Embed -->
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/8OBfr46Y0cQ" frameborder="0"></iframe>
+                           </div>
+                        </div> <!-- End Video Embed -->
+                        <!-- Arrow Image -->
+                        <div class="row arrow-red">
+                           <div class="col-sm-12 hidden-xs">
+                              <img src="img/arrow-red.png" alt="">
+                           </div>
+                        </div> <!-- End Arrow Image -->
+                     </div>
+                     <!-- CTA Form -->
+                     <div class="col-sm-7 cta-form">
+                        <!-- Form Heading -->
+                        <div class="row form-heading">
+                           <div class="col-md-10 col-sm-12">
+                              <h3>Our Distinctive 21-Point Painting Project Audit Means You’ll Know Exactly What to Expect – No Surprises, No Price Changes!</h3>
+                           </div>
+                        </div> <!-- End Form Heading -->
+                        <!-- Form Content -->
+                        <div class="row form-content">
+                           <div class="col-sm-12">
+                              <p>Schedule Your No-Cost, No-Obligation Painting Consultation Online Now! Or Call 555-5555 for Even <strong><em>FASTER Service!</em></strong>
+                              </p>
+                           </div>
+                           <div class="col-sm-12">
+                              <form>
+                                 <div class="form-group col-xs-6">
+                                    <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                                 </div>
+                                 <div class="form-group col-xs-6">
+                                    <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                                 </div>
+                                 <div class="form-group col-xs-6">
+                                    <input type="tel" class="form-control" id="phone-number" placeholder="Phone Number">
+                                 </div>
+                                 <div class="form-group col-xs-6">
+                                    <input type="email" class="form-control" id="email-address" placeholder="Email Address">
+                                 </div>
+                                 <div class="form-group col-xs-12">  
+                                    <input type="text" class="form-control" id="street-address" placeholder="Street Address">
+                                 </div>
+                                 <div class="form-group col-xs-6">
+                                    <input type="text" class="form-control" id="city" placeholder="City">
+                                 </div>
+                                 <div class="form-group col-xs-2">
+                                    <input type="text" class="form-control" id="state" placeholder="ST">
+                                 </div>
+                                 <div class="form-group col-xs-4">
+                                    <input type="text" class="form-control" id="zip" placeholder="Zip Code">
+                                 </div>
+                                 <div class="col-xs-12 cta-submit">
+                                    <button type="submit" class="btn cta-btn">Request My <span>FREE</span> Consultation!</button>
+                                 </div>
+                              </form>
+                           </div>
+                        </div> <!-- End Form Content -->
+                     </div> <!-- End CTA Form -->
+                  </div> <!-- End CTA Panel -->
+               </div> <!-- End Left Content -->
+               
+               <!-- Right Painter Image -->
+               <div class="painter-img col-md-3 hidden-sm hidden-xs">
+                  <img src="img/painter.png" alt="">
+               </div> <!-- End Right Painter Image -->
+            </div>
+         </div>
+      </section> <!-- End Jumbotron -->
+      
+      <!-- Information  -->
+      <section class="container info-section">
+         <div class="row">
+            <div class="col-xs-12">
+               <h2 class="text-center">What Makes ABC Painting So Different from “Typical” Painting Contractors?</h2>
+            </div>
+         </div>
+         <div class="row">
+            <!-- Info Panel -->
+            <div class="col-sm-4">
+               <div class="info-panel">
+                  <div class="info-head"><h3>Our Unique Painting Process</h3></div>
+                  <div class="info-content">
+                     <p>So many painting contractors “play it by ear,” executing their projects differently from day to day without a system. This creates inconsistent results and unhappy customers.</p>
+                     <p>At ABC Painting Company, we use a unique combination of standard operating procedures, daily checklists, and ongoing supervision to produce consistent quality standards project after project.</p>
+                  </div>
+               </div>
+            </div> <!-- End Info Panel -->
+            <!-- Info Panel -->
+            <div class="col-sm-4">
+               <div class="info-panel">
+                  <div class="info-head"><h3>Our Veteran Crew Leaders</h3></div>
+                  <div class="info-content">
+                     <p>Good production systems are a great start for a quality painting project, but on-site leadership is essential to make certain the systems are followed using best practices.</p>
+                     <p>Our veteran crew leaders have been thoroughly screened, field tested, trained, and have years of experience under their belts. This means painting problems are quickly anticipated and solved on your project should they arise.</p>
+                  </div>
+               </div>
+            </div> <!-- End Info Panel -->
+            <!-- Info Panel -->
+            <div class="col-sm-4">
+               <div class="info-panel">
+                  <div class="info-head"><h3>Our Iron-Clad Guarantees</h3></div>
+                  <div class="info-content">
+                     <p>Many painters “promise” that they’ll do a good job, but we put it in writing for you.</p>
+                     <p>Our <strong><em>Make-It-Right Guarantee</em></strong> means we will quickly and thoroughly respond to any concerns you have on your painting project until you are satisfied. If our best efforts haven’t satisfied you, our Free Paint Guarantee means the cost of your paint is on us! This is our way of standing behind our promises to you!</p>
+                  </div>
+               </div>
+            </div> <!-- End Info Panel -->
+         </div>
+      </section> <!-- End Information -->
+      
+      <!-- Testimonials -->
+      <section class="container-fluid testimonials">
+         <div class="container info-section">
+            <div class="row">
+               <div class="col-xs-12">
+                  <h2 class="text-center">What Do My Friends and Neighbors Have to Say About ABC Painting Company?</h2>
+               </div>
+            </div>
+            <div class="row">
+               <!-- Info Panel -->
+               <div class="col-sm-4">
+                  <div class="info-panel">
+                     <div class="info-head"><h3>“A Very Different Experience”</h3></div>
+                     <div class="info-img"><img class="img-responsive" src="img/testimonial-img.jpg" alt=""></div>
+                     <blockquote class="info-content">
+                        <ins>In the past, we had two really bad experiences with painting contractors.</ins> We almost considered trying to do the painting ourselves, but I’m reluctant to get up on dangerous ladders. A neighbor referred us to Mr. Jones and we were blown away! Their crew members showed up on time and worked solid through the day. Our living room and dining room look beautiful!
+                        <footer>Tim &amp; Sandy Miller,<br> Street, City, Town</footer>
+                     </blockquote>
+                  </div>               
+               </div> <!-- End Info Panel -->
+               <!-- Info Panel -->
+               <div class="col-sm-4">
+                  <div class="info-panel">
+                     <div class="info-head"><h3>“Someone You Can Trust”</h3></div>
+                     <div class="info-img"><img class="img-responsive" src="img/testimonial-img.jpg" alt=""></div>
+                     <blockquote class="info-content">
+                        After my husband passed, I had to take care of a lot of things around the house that he usually handled. I really don’t like having strangers at my home, but over the last seven years I’ve gotten to know Bob and his crew leader Randy. <ins>They’ve helped me out a lot and I would recommend them to anyone, especially if you are older and need someone you can trust.</ins>
+                        <footer>Deborah Matlock,<br> Street, City, Town</footer>
+                     </blockquote>
+                  </div>               
+               </div> <!-- End Info Panel -->
+               <!-- Info Panel -->
+               <div class="col-sm-4">
+                  <div class="info-panel">
+                     <div class="info-head"><h3>“They Give Us Family Time”</h3></div>
+                     <div class="info-img"><img class="img-responsive" src="img/testimonial-img.jpg" alt=""></div>
+                     <blockquote class="info-content">
+                        <ins>My husband I are both working professionals with young children. We used to enjoy home projects, but we don’t have the time anymore.</ins> When we are at home, we want it to be ‘quality time.’ So, we’ve called Bob for three different painting projects – two small and one large – <ins>we’ve been happy every time.</ins> They really are a great company to do business with!
+                        <footer>Dan &amp; Cindy Nix,<br> Street, City, Town</footer>
+                     </blockquote>
+                  </div>               
+               </div> <!-- End Info Panel -->
+            </div>
+            <div class="row testimonial-button">
+               <div class="col-sm-10 col-xs-12 col-sm-offset-1">
+                  <a class="btn yellow-btn" href="#">Learn More! <span class="hidden-xs">What People "Really" Think About ABC Painting!</span></a>
+               </div>
+               <div class="col-sm-1 hidden-xs arrow-blue">
+                  <img src="img/arrow-blue.png" alt="">
+               </div>
+            </div>
+         </div>
+      </section> <!-- End Testimonials -->
+      
+      <!-- About The Company -->
+      <section class="container about-us">
+         <div class="row">
+            <!-- About Panel -->
+            <div class="col-sm-6">
+               <div class="about-panel">
+                  <img class="ribbon" src="img/family-ribbon.png" alt="">
+                  <div class="about-img">
+                     <img class="img-responsive" src="img/company-img.jpg" alt="">
+                  </div>
+                  <div class="about-content">
+                     <h3>Who Owns ABC Painting Company?</h3>
+                     <p>ABC Painting Company is a family business. When you call in, you will often speak with Linda, my wife, or me – Bob Jones. You can see our two young children pictured above, Sophia and Bob, Jr. (we call him Bobby!)</p>
+                  </div>
+               </div>
+            </div> <!-- End About Panel -->
+            <!-- Crew Panel -->
+            <div class="col-sm-6">
+               <div class="about-panel">
+                  <img class="ribbon" src="img/crew-ribbon.png" alt="">
+                  <div class="about-img">
+                     <img class="img-responsive" src="img/crew-img.jpg" alt="">
+                  </div>
+                  <div class="about-content">
+                     <h3>Who Will Manage My Painting Project on a Day-to-Day Basis?</h3>
+                     <p>Pictured above is the day-to-day leadership team you will interact with directly. Emily (customer service), Jim (crew leader), Earl (crew leader), Jimmy (crew leader), Kevin (crew leader), and Simon (estimator.)</p>
+<small>*Project Leadership Team Only Pictured.</small>
+                  </div>
+               </div>
+            </div> <!-- End About Panel -->
+         </div>
+      </section> <!-- End About The Company -->
+      
+      <!-- Painting Project Audit Request 1 -->
+      <section class="container-fluid project-audit">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12">
+                  <h2 class="text-center">What Happens Exactly When I Request My Free 21-Point Painting Project Audit?</h2>
+               </div>
+            </div>
+            <div class="row audit-steps">
+               <div class="col-xs-2 bullet">
+                  <p><span class="hidden-xs">Step</span> 1</p>
+               </div>
+               <div class="col-xs-10">
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <div class="row">
+                           <h3>We Respond Immediately By Phone or the Same Business Day Online</h3>
+                           <p>When you call our office, someone is available to take your painting project request 24-hours a day, 7-days a week. Go ahead and call right now and see! If you submit your information online, we respond the same business day for all estimate requests made before 4:00 PM. Our office is closed on Saturday and Sunday, but we will reply the next business day.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row audit-steps">
+               <div class="col-xs-2 bullet">
+                  <p><span class="hidden-xs">Step</span> 2</p>
+               </div>
+               <div class="col-xs-10">
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <div class="row">
+                           <h3>We Conduct a Very Brief Pre-Project Survey to Better Understand Your Needs</h3>
+                           <p>When we speak with you on the phone to set a time that is convenient for you, we will ask you handful of questions that allows us to better prepare for our visit with you on-site. At this time, we will also mail and email you information that answers frequently asked questions about our company and our unique painting processes. This helps you gather all the facts you need to make the best possible decision about your painting project.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> <!-- End Painting Project Audit Request -->
+      
+      <!-- Painting Project Audit Request 2 -->
+      <section class="container project-audit-2">
+         <div class="row">
+               <div class="col-xs-12">
+                  <h2 class="text-center">What Takes Place When My Project Consultant Arrives On-Site 
+for My 21-Point Painting Project Audit?</h2>
+               </div>
+         </div>
+         <div class="row audit-steps">
+            <div class="col-xs-2 bullet">
+               <p><span class="hidden-xs">Step</span> 1</p>
+            </div>
+            <div class="col-xs-10">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <div class="row">
+                        <h3>Overview</h3>
+                        <p>Your Project Consultant will give you a brief overview as a reminder of what will happen while he is on your property. This lets you know exactly what will take place during your time together.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row audit-steps">
+            <div class="col-xs-2 bullet">
+               <p><span class="hidden-xs">Step</span> 2</p>
+            </div>
+            <div class="col-xs-10">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <div class="row">
+                        <h3>Survey Review</h3>
+                        <p>Your Project Consultant will give you a brief overview as a reminder of what will happen while he is on your property. This lets you know exactly what will take place during your time together.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row audit-steps">
+            <div class="col-xs-2 bullet">
+               <p><span class="hidden-xs">Step</span> 3</p>
+            </div>
+            <div class="col-xs-10">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <div class="row">
+                        <h3>Project Audit</h3>
+                        <p>An audit will be conducted to determine the present condition of your home or business, measurements will be taken, and alternatives provided for the best ways to achieve the outcome you are looking for.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row audit-steps">
+            <div class="col-xs-2 bullet">
+               <p><span class="hidden-xs">Step</span> 4</p>
+            </div>
+            <div class="col-xs-10">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <div class="row">
+                        <h3>Preparation of Written Recommendations</h3>
+                        <p>Your Project Consultant will return to his vehicle to create a written recommendations document for you on-site. While he does this, he will leave you with a Past Project Portfolio you can review.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row audit-steps">
+            <div class="col-xs-2 bullet">
+               <p><span class="hidden-xs">Step</span> 5</p>
+            </div>
+            <div class="col-xs-10">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <div class="row">
+                        <h3>Company &amp; Painting Process Overview</h3>
+                        <p>Upon returning, your Project Consultant will quickly answer any questions you may have about ABC Painting, our people, painting products, or processes.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row audit-steps">
+            <div class="col-xs-2 bullet">
+               <p><span class="hidden-xs">Step</span> 6</p>
+            </div>
+            <div class="col-xs-10">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <div class="row">
+                        <h3>Presentation of Written Recommendations</h3>
+                        <p>At this point, we will thoroughly explain the scope of work required to achieve your desired outcome and answer any questions you may have.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row audit-steps">
+            <div class="col-xs-2 bullet">
+               <p><span class="hidden-xs">Step</span> 7</p>
+            </div>
+            <div class="col-xs-10">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <div class="row">
+                        <h3>Determine Next Steps</h3>
+                        <p>This is where we assess any scheduling needs or special considerations your project may require and put your project into the production calendar. An approximate start date will be provided.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> <!-- End Painting Project Audit Request 2 --> 
+   
+      <!-- PDF Download Section -->
+      <section class="container pdf-download">
+         <!-- PDF Download Head -->
+         <div class="row pdf-download-head">
+            <div class="col-sm-8">
+               <h2>
+                  Still Have Unanswered Questions?<br>
+                  Not Quite Ready to Schedule Your FREE Consultation?<br>
+                  <small>
+                     We Understand! Download Our FREE PDF Report<br>
+                     <strong>“The Owner’s Quick Tips Guide to Professional-Grade Painting Results!”</strong>
+                  </small>
+               </h2>
+            </div>
+            <div class="col-sm-3 col-sm-offset-1 hidden-xs">
+               <img src="img/question-img.png" alt="">
+            </div>
+         </div> <!-- End PDF Download Head -->
+         <!-- PDF Download Content -->
+         <div class="row pdf-download-content">
+            <div class="col-sm-5">
+               <div class="row">
+                  <div class="col-xs-2">
+                     <img class="img-responsive arrow-green" src="img/arrow-green.png" alt="">
+                  </div>
+                  <div class="col-xs-10">
+                     <img class="img-responsive" src="img/report-img.png" alt="">
+                  </div>
+               </div>
+               <div class="row  cta-form">
+                  <div class="col-sm-12">
+                     <form>
+                        <div class="form-group col-xs-6">
+                           <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-xs-6">
+                           <input type="email" class="form-control" id="email-address" placeholder="Email Address">
+                        </div>
+                        <div class="col-xs-12 cta-submit">
+                           <button type="submit" class="btn cta-btn">Request My FREE Consultation!</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-7 right-col">
+               <h3>
+                  Don’t Waste Countless Hours Searching the Internet to Discover The Most Important Facts About Painting!<br>
+                  <small>We’ve Assembled Them All Here For You – FREE!</small>
+               </h3>
+               <p>Inside this Remarkable Guide You’ll Discover Little-Known Painting Facts…</p>
+               <ul>
+                  <li>The Truth About Selecting the Best Type of Paint You’ll Never Hear at The Paint Store</li>
+                  <li>Why Some Exterior Paint Jobs Last for Years While Others Fail Fast</li>
+                  <li>How to Select the “No-Regrets” Paint Sheen Most Appropriate for Your Interior</li>
+                  <li>Seven Important Questions You Should Ask a Painting Contractor Before You Even Consider Scheduling the Estimate</li>
+                  <li>And a Whole Lot More…</li>
+               </ul>
+            </div>
+         </div> <!-- End PDF Download Content -->
+      </section> <!-- PDF Download Section -->
+      
+      <!-- Specific Services Section -->
+      <section class="container services">
+         <div class="row">
+            <h2 class="text-center">What Specific Services Does ABC Painting Provide?</h2>
+            <div class="container services-list">
+               <div class="row" >
+                  <div class="col-lg-8 col-lg-offset-2">
+                     <ul class="col-sm-4">
+                        <li>Exterior Painting</li>
+                        <li>Interior Painting</li>
+                        <li>Drywall Repairs</li>
+                        <li>Carpentry Repairs</li>
+                     </ul>
+                     <ul class="col-sm-4">
+                        <li>Pressure-Washing</li>
+                        <li>Epoxy Floor Installation</li>
+                        <li>Wallpaper Removal</li>
+                        <li>Popcorn Ceiling Removal</li>
+                     </ul>
+                     <ul class="col-sm-4">
+                        <li>Cabinet Painting</li>
+                        <li>Deck Staining</li>
+                        <li>Gutter Cleaning</li>
+                        <li>All Painting Services</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> <!-- End Specific Services Section -->
+      
+      <!-- Footer CTA Section -->
+      <footer class="container footer-cta">
+         <div class="row">
+            <div class="col-xs-12">
+               <h2 class="text-center">Yes! I’m Ready for My FREE 21-Point Painting Project Consultation</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-6 hidden-xs">
+               <iframe width="100%" height="410" src="https://www.youtube.com/embed/8OBfr46Y0cQ" frameborder="0"></iframe>
+            </div>
+            <div class="col-sm-6 cta-form">
+               <!-- Form Heading -->
+               <div class="row form-heading">
+                  <div class="col-sm-12">
+                     <h3>Our Distinctive 21-Point Painting Project Audit Means You’ll Know Exactly What to Expect – No Surprises, No Price Changes!</h3>
+                  </div>
+               </div> <!-- End Form Heading -->
+               <!-- Form Content -->
+               <div class="row form-content">
+                  <div class="col-sm-12">
+                     <p>Schedule Your No-Cost, No-Obligation Painting Consultation Online Now! Or Call 555-5555 for Even <strong><em>FASTER Service!</em></strong>
+                     </p>
+                  </div>
+                  <div class="col-sm-12">
+                     <form>
+                        <div class="form-group col-xs-6">
+                           <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-xs-6">
+                           <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                        </div>
+                        <div class="form-group col-xs-6">
+                           <input type="tel" class="form-control" id="phone-number" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group col-xs-6">
+                           <input type="email" class="form-control" id="email-address" placeholder="Email Address">
+                        </div>
+                        <div class="form-group col-xs-12">  
+                           <input type="text" class="form-control" id="street-address" placeholder="Street Address">
+                        </div>
+                        <div class="form-group col-xs-6">
+                           <input type="text" class="form-control" id="city" placeholder="City">
+                        </div>
+                        <div class="form-group col-xs-2">
+                           <input type="text" class="form-control" id="state" placeholder="ST">
+                        </div>
+                        <div class="form-group col-xs-4">
+                           <input type="text" class="form-control" id="zip" placeholder="Zip Code">
+                        </div>
+                        <div class="col-xs-12 cta-submit">
+                           <button type="submit" class="btn cta-btn">Request My <span>FREE</span> Consultation!</button>
+                        </div>
+                     </form>
+                  </div>
+               </div> <!-- End Form Content --> 
+            </div>
+         </div>
+         <div class="row footer-awards">
+            <div class="col-xs-3 col-md-2">
+               <img class="img-responsive" src="img/bbb-img.png" alt="">
+            </div>
+            <div class="col-xs-3 col-md-3 col-md-offset-1">
+               <img class="img-responsive" src="img/angies-img.jpg" alt="">
+            </div>
+            <div class="col-xs-3 col-md-2 col-md-offset-1">
+               <img class="img-responsive" src="img/chamber-img.png" alt="">
+            </div>
+            <div class="col-xs-3 col-md-2 col-md-offset-1">
+               <img class="img-responsive" src="img/ethics-img.jpg" alt="">
+            </div>
+         </div>
+      </footer> <!-- End Footer CTA Section -->
+   
+   </div>
+
+
+
+  
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+   <!-- Bootstrap JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+
+   <!-- Fancybox JavaScript -->
+   <script type="text/javascript" src="vendor/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+   <!-- SimplyScroll JavaScript -->
+   <script type="text/javascript" src="vendor/simplyscroll/jquery.simplyscroll.min.js"></script>
+
+   <!-- Slick JavaScript -->
+   <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+
+   <!-- User JavaScript -->
+   <script type="text/javascript" src="js/main-js.js"></script>
+</body>
+</html>
